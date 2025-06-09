@@ -55,7 +55,7 @@ export const drawHand = (predictions: Keypoint[], color: string, ctx: CanvasRend
         ctx.beginPath();
         ctx.moveTo(predictions[firstJointIndex].x, predictions[firstJointIndex].y);
         ctx.lineTo(predictions[secondJointIndex].x, predictions[secondJointIndex].y);
-        ctx.strokeStyle = "lightgrey";
+        ctx.strokeStyle = "white";
         ctx.lineWidth = 1;
         ctx.stroke();
       }

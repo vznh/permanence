@@ -48,7 +48,7 @@ const Hand = () => {
       console.log("Handpose model loaded.");
       const detectInterval = setInterval(() => {
         detect(detector);
-      }, 10);
+      }, 1);
 
       return () => clearInterval(detectInterval);
     } catch (error: any) {
